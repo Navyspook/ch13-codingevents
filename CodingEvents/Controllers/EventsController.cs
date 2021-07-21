@@ -8,12 +8,12 @@ namespace CodingEvents.Controllers
 {
     public class EventsController : Controller
     {
-        static private List<string> Events = new List<string>();
+        static private Dictionary<string, string> EventsDict = new Dictionary<string, string>();
 
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.events = Events;
+            ViewBag.events = EventsDict;
 
             return View();
         }
@@ -25,9 +25,9 @@ namespace CodingEvents.Controllers
         }
 
         [HttpPost("/Events/Add")]
-        public IActionResult NewEvent(string name)
+        public IActionResult NewEvent(string name, string descrip)
         {
-            Events.Add(name);
+            EventsDict.Add(name, descrip);
 
             return Redirect("/Events");
         }

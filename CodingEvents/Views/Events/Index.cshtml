@@ -5,13 +5,27 @@
 </p>
 
 @if (ViewBag.events.Count == 0)
-            {
-                <p>No events yet!</p>
-            }
+{
+    <p>No events yet!</p>
+}
 
-<ul>
-    @foreach (string meeting in ViewBag.events)
-            {
-                <li>@meeting</li>
-            }
-</ul>
+@*<ul>
+    @foreach (KeyValuePair<string, string> meeting in ViewBag.events)
+    {
+        <li>Event: @meeting.Key  --  Descrip: @meeting.Value</li>
+    }
+</ul>*@
+
+<table style="width:100%">
+    <tr>
+        @foreach (var meeting in ViewBag.events)
+        {
+<th>@meeting.Key</th>}
+    </tr>
+
+    <tr>
+        @foreach (var meeting in ViewBag.events)
+        {
+<td>@meeting.Value</td>}
+    </tr>
+</table>
