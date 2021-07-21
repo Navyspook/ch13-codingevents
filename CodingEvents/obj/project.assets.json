@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Justin\\OneDrive\\Desktop\\LaunchCode\\asp_net_practice\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
+      "projectUniqueName": "C:\\Users\\Justin\\OneDrive\\Desktop\\LaunchCode\\asp_net_exercises\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
       "projectName": "CodingEvents",
-      "projectPath": "C:\\Users\\Justin\\OneDrive\\Desktop\\LaunchCode\\asp_net_practice\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
+      "projectPath": "C:\\Users\\Justin\\OneDrive\\Desktop\\LaunchCode\\asp_net_exercises\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Justin\\OneDrive\\Desktop\\LaunchCode\\asp_net_practice\\CodingEvents\\CodingEvents\\obj\\",
+      "outputPath": "C:\\Users\\Justin\\OneDrive\\Desktop\\LaunchCode\\asp_net_exercises\\CodingEvents\\CodingEvents\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",

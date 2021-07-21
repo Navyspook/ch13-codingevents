@@ -9,7 +9,7 @@ namespace CodingEvents.Controllers
     public class EventsController : Controller
     {
         static private Dictionary<string, string> EventsDict = new Dictionary<string, string>();
-
+        
         [HttpGet]
         public IActionResult Index()
         {
