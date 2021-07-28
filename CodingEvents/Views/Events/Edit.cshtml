@@ -1,0 +1,59 @@
+﻿@{ 
+    ViewBag.Title="Edit Event NAME(id = ID)";
+
+    string name = ViewBag.eventToEdit.Name;
+    string description = ViewBag.eventToEdit.Description;
+    int eventId = ViewBag.eventToEdit.Id;
+
+    //string name = ViewBag.thisEvent.Name;
+    //string description = ViewBag.thisEvent.Description;
+    //string title = $"Edit event: {name} ({ViewBag.thisEvent.Id})";
+    //int eventId = ViewBag.thisEvent.Id;
+
+}
+
+
+<h1>Edit Event</h1>
+
+<form method="post" action="/events/edit">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input name="name" type="text" /> <br>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input name="description" /> <br> <br>
+    </div>
+    <input type="submit" value="Edit Event" />
+    <input type="hidden" value="@ViewBag.eventToEdit.Id" name="eventId" />
+
+</form>
+
+@*<form method="post">
+
+    <table class="table">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        @foreach (var evt in ViewBag.events)
+        {
+            <tr>
+                <td><input type="radio" name="eventIds" value="@evt.Id" /></td>
+                <td>@evt.Id</td>
+                <td>@evt.Name</td>
+                <td>@evt.Description</td>
+            </tr>
+        }
+
+    </table>
+    <input type="submit" value="Submit" />
+
+</form>*@

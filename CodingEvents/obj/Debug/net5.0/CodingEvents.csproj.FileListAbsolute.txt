@@ -82,3 +82,5 @@ C:\Users\Justin\OneDrive\Desktop\LaunchCode\asp_net_exercises\CodingEvents\Codin
 C:\Users\Justin\OneDrive\Desktop\LaunchCode\asp_net_exercises\CodingEvents\CodingEvents\obj\Debug\net5.0\CodingEvents.pdb
 C:\Users\Justin\OneDrive\Desktop\LaunchCode\asp_net_exercises\CodingEvents\CodingEvents\obj\Debug\net5.0\CodingEvents.genruntimeconfig.cache
 C:\Users\Justin\OneDrive\Desktop\LaunchCode\asp_net_exercises\CodingEvents\CodingEvents\obj\Debug\net5.0\CodingEvents.csproj.CopyComplete
+C:\Users\Justin\OneDrive\Desktop\LaunchCode\asp_net_exercises\CodingEvents\CodingEvents\obj\Debug\net5.0\Razor\Views\Events\Delete.cshtml.g.cs
+C:\Users\Justin\OneDrive\Desktop\LaunchCode\asp_net_exercises\CodingEvents\CodingEvents\obj\Debug\net5.0\Razor\Views\Events\Edit.cshtml.g.cs

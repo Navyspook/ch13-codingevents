@@ -1,31 +1,81 @@
-﻿<h1>Coding Events</h1>
+﻿@using CodingEvents.Models;
+
+@model List<Event>
+
+<h1>Coding Events</h1>
+
+<p>
+    <a asp-controller="Events" asp-action="Add">Add Event</a>
+</p>
 
 @*<p>
-    <a asp-controller="Events" asp-action="Add">Add Event</a>
+    <a asp-controller="Events" asp-action="Edit">Edit Events</a>
 </p>*@
 
-@if (ViewBag.events.Count == 0)
+<p>
+    <a asp-controller="Events" asp-action="Delete">Delete Events</a>
+</p>
+
+@if (Model.Count == 0)
 {
     <p>No events yet!</p>
 }
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                # of Attendees
+            </th>
+            <th>
+                Contact Email
+            </th>
+
+        </tr>
+        @foreach (var evt in Model)
+        {
+            <tr>
+                <td>@evt.Id</td>
+                <td>@evt.Name</td>
+                <td>@evt.Description</td>
+                <td>@evt.Location</td>
+                <td>@evt.Attendees</td>
+                <td>@evt.ContactEmail</td>
+                <td><a asp-controller="Events" asp-action="Edit" asp-route-eventId="@evt.Id">Edit Event</a></td>
+            </tr>
+        }
+    </table>
+}
 
 @*<ul>
-    @foreach (KeyValuePair<string, string> meeting in ViewBag.events)
-    {
-        <li>Event: @meeting.Key  --  Description: @meeting.Value</li>
-    }
-</ul>*@
-
-<table style="width:100%">
-    <tr>
-        @foreach (var meeting in ViewBag.events)
+        @foreach (KeyValuePair<string, string> meeting in ViewBag.events)
         {
-<th>@meeting.Key</th>}
-    </tr>
+            <li>Event: @meeting.Key  --  Description: @meeting.Value</li>
+        }
+    </ul>*@
 
-    <tr>
-        @foreach (var meeting in ViewBag.events)
-        {
-<td>@meeting.Value</td>}
-    </tr>
-</table>
+@*<table style="width:100%">
+        <tr>
+            @foreach (var meeting in ViewBag.events)
+            {
+    <th>@meeting.Key</th>}
+        </tr>
+
+        <tr>
+            @foreach (var meeting in ViewBag.events)
+            {
+    <td>@meeting.Value</td>}
+        </tr>
+    </table>*@
